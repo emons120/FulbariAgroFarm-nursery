@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fulbari Agro Farm & Nursery | উন্নত চারা, সমৃদ্ধ কৃষি</title>
+
+<meta name="description"
+content="Fulbari Agro Farm & Nursery - মানসম্মত গাছের চারা, চারার মূল্য ও কৃষি পরামর্শ।">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,"Noto Sans Bengali",sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5faf5;
+    color:#173b20;
+    line-height:1.7;
+}
+
+/* HEADER */
+
+header{
+    background:linear-gradient(135deg,#075e2d,#159447);
+    color:white;
+    padding:15px 6%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 15px rgba(0,0,0,.15);
+}
+
+.nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.logo{
+    font-size:23px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#d9ff8a;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#eaff9b;
+}
+
+/* HERO */
+
+.hero{
+    min-height:570px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:60px 20px;
+
+    background:
+    linear-gradient(rgba(0,70,30,.65),rgba(0,70,30,.65)),
+    url("https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1600&q=80")
+    center/cover;
+
+    color:white;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero h1 span{
+    color:#d7ff76;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:13px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    margin:5px;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#b9f34a;
+    color:#164b20;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+}
+
+.btn-light{
+    background:white;
+    color:#08733a;
+}
+
+/* COMMON */
+
+section{
+    padding:70px 6%;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.section-title h2{
+    font-size:34px;
+    color:#075e2d;
+}
+
+.section-title p{
+    color:#58705e;
+}
+
+/* FEATURES */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.feature{
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.07);
+}
+
+.feature .icon{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+/* CATEGORY BUTTONS */
+
+.plant-buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:30px;
+}
+
+.plant-buttons button{
+    border:2px solid #159447;
+    background:white;
+    color:#086b35;
+    padding:11px 20px;
+    border-radius:25px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.plant-buttons button:hover,
+.plant-buttons button.active{
+    background:#118b43;
+    color:white;
+}
+
+/* PLANTS */
+
+.plants{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:17px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-body{
+    padding:20px;
+}
+
+.card-body h3{
+    color:#087335;
+    margin-bottom:8px;
+    font-size:21px;
+}
+
+.tag{
+    display:inline-block;
+    background:#e8f8df;
+    color:#287526;
+    padding:4px 10px;
+    border-radius:15px;
+    font-size:13px;
+    margin-bottom:10px;
+}
+
+.price{
+    font-size:25px;
+    font-weight:bold;
+    color:#e27600;
+    margin:8px 0 12px;
+}
+
+.order-btn{
+    display:block;
+    width:100%;
+    background:#20c764;
+    color:white;
+    text-decoration:none;
+    text-align:center;
+    padding:12px;
+    border-radius:9px;
+    font-weight:bold;
+    margin-top:15px;
+    transition:.3s;
+}
+
+.order-btn:hover{
+    background:#128c45;
+    transform:translateY(-2px);
+}
+
+/* ADVICE */
+
+.advice{
+    background:#eaf7e8;
+}
+
+.advice-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.advice-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    border-left:5px solid #159447;
+}
+
+.advice-card h3{
+    margin-bottom:10px;
+    color:#075e2d;
+}
+
+/* ABOUT */
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:20px;
+}
+
+.about h2{
+    font-size:35px;
+    color:#075e2d;
+    margin-bottom:15px;
+}
+
+/* CONTACT */
+
+.contact{
+    background:#075e2d;
+    color:white;
+}
+
+.contact-box{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.contact h2{
+    font-size:34px;
+    margin-bottom:15px;
+}
+
+.contact-info{
+    font-size:18px;
+}
+
+.contact-form{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:13px;
+    margin-bottom:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.contact-form button{
+    width:100%;
+    padding:13px;
+    border:0;
+    border-radius:8px;
+    background:#20c764;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* FOOTER */
+
+footer{
+    background:#043c1d;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* FLOATING WHATSAPP */
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#20c764;
+    color:white;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    text-decoration:none;
+    box-shadow:0 5px 20px rgba(0,0,0,.25);
+    z-index:999;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .features{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .plants{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .advice-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .about,
+    .contact-box{
+        grid-template-columns:1fr;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+}
+
+@media(max-width:600px){
+
+    section{
+        padding:50px 5%;
+    }
+
+    .features,
+    .plants,
+    .advice-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero{
+        min-height:500px;
+    }
+
+    .hero h1{
+        font-size:30px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .section-title h2{
+        font-size:28px;
+    }
+
+    .logo{
+        font-size:18px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="nav">
+
+<div class="logo">
+🌱 <span>Fulbari</span> Agro Farm & Nursery
+</div>
+
+<nav>
+<a href="#home">হোম</a>
+<a href="#plants">চারা</a>
+<a href="#advice">কৃষি পরামর্শ</a>
+<a href="#about">আমাদের সম্পর্কে</a>
+<a href="#contact">যোগাযোগ</a>
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>
+🌱 Fulbari <span>Agro Farm & Nursery</span>
+</h1>
+
+<p>
+উন্নত চারা • সমৃদ্ধ কৃষি • সবুজ আগামী
+</p>
+
+<a href="#plants" class="btn btn-primary">
+🌳 চারার তালিকা দেখুন
+</a>
+
+<a href="#contact" class="btn btn-light">
+📞 যোগাযোগ করুন
+</a>
+
+</div>
+
+</section>
+
+
+<!-- FEATURES -->
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>কেন Fulbari Agro Farm & Nursery?</h2>
+
+<p>
+ভালো চারা, সঠিক পরামর্শ এবং সফল কৃষিই আমাদের লক্ষ্য
+</p>
+
+</div>
+
+<div class="features">
+
+<div class="feature">
+<div class="icon">🌱</div>
+<h3>মানসম্মত চারা</h3>
+<p>সুস্থ ও যত্নসহকারে উৎপাদিত বিভিন্ন ফলজ গাছের চারা।</p>
+</div>
+
+<div class="feature">
+<div class="icon">👨‍🌾</div>
+<h3>কৃষি পরামর্শ</h3>
+<p>গাছ লাগানো থেকে শুরু করে সার, সেচ ও পরিচর্যার প্রয়োজনীয় পরামর্শ।</p>
+</div>
+
+<div class="feature">
+<div class="icon">💧</div>
+<h3>সঠিক পরিচর্যা</h3>
+<p>গাছের বয়স ও জাত অনুযায়ী পরিচর্যার সহজ নির্দেশনা।</p>
+</div>
+
+<div class="feature">
+<div class="icon">🌾</div>
+<h3>কৃষকের পাশে</h3>
+<p>আধুনিক কৃষি প্রযুক্তির মাধ্যমে কৃষকের উৎপাদন বাড়ানোর চেষ্টা।</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PLANTS -->
+
+<section id="plants">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>🌳 আমাদের গাছের চারা</h2>
+
+<p>
+চারার নাম ও মূল্য দেখুন এবং সরাসরি WhatsApp-এ অর্ডার করুন
+</p>
+
+</div>
+
+
+<!-- CATEGORY BUTTONS -->
+
+<div class="plant-buttons">
+
+<button class="active"
+onclick="filterPlants('all',this)">
+সব চারা
+</button>
+
+<button onclick="filterPlants('mango',this)">
+🥭 আম
+</button>
+
+<button onclick="filterPlants('grape',this)">
+🍇 আঙ্গুর
+</button>
+
+<button onclick="filterPlants('other',this)">
+🍊 অন্যান্য ফল
+</button>
+
+</div>
+
+
+<div class="plants">
+
+
+<!-- KATIMON -->
+
+<div class="card plant mango">
+
+<img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?auto=format&fit=crop&w=800&q=80">
+
+<div class="card-body">
+
+<span class="tag">আমের চারা</span>
+
+<h3>🥭 আমের কাটিমন</h3>
+
+<div class="price">
+১৫০৳
+</div>
+
+<p>
+উন্নত জাতের কাটিমন আমের চারা।
+</p>
+
+<a class="order-btn"
+target="_blank"
+href="https://wa.me/8801881484471?text=আসসালামু%20আলাইকুম,%20আমি%20আমের%20কাটিমন%20চারা%20নিতে%20চাই।%20মূল্য%20১৫০৳।%20চারা%20সম্পর্কে%20বিস্তারিত%20জানতে%20চাই।">
+
+💬 WhatsApp-এ অর্ডার করুন
+</a>
+
+</div>
+</div>
+
+
+<!-- BAIKUNUR -->
+
+<div class="card plant grape">
+
+<img src="https://images.unsplash.com/photo-1537640538966-79f369143f8f?auto=format&fit=crop&w=800&q=80">
+
+<div class="card-body">
+
+<span class="tag">আঙ্গুরের চারা</span>
+
+<h3>🍇 বাইকুনুর</h3>
+
+<div class="price">
+২০০৳
+</div>
+
+<p>
+বাইকুনুর জাতের আঙ্গুরের চারা।
+</p>
+
+<a class="order-btn"
+target="_blank"
+href="https://wa.me/8801881484471?text=আসসালামু%20আলাইকুম,%20আমি%20বাইকুনুর%20আঙ্গুরের%20চারা%20নিতে%20চাই।%20মূল্য%20২০০৳।%20বিস্তারিত%20জানতে%20চাই।">
+
+💬 WhatsApp-এ অর্ডার করুন
+</a>
+
+</div>
+</div>
+
+
+<!-- VALAGE -->
+
+<div class="card plant grape">
+
+<img src="https://images.unsplash.com/photo-1537640538966-79f369143f8f?auto=format&fit=crop&w=800&q=80">
+
+<div class="card-body">
+
+<span class="tag">আঙ্গুরের চারা</span>
+
+<h3>🍇 ভ্যালেজ</h3>
+
+<div class="price">
+৪০০৳
+</div>
+
+<p>
+ভ্যালেজ জাতের আঙ্গুরের চারা।
+</p>
+
+<a class="order-btn"
+target="_blank"
+href="https://wa.me/8801881484471?text=আসসালামু%20আলাইকুম,%20আমি%20ভ্যালেজ%20আঙ্গুরের%20চারা%20নিতে%20চাই।%20মূল্য%20৪০০৳।%20বিস্তারিত%20জানতে%20চাই।">
+
+💬 WhatsApp-এ অর্ডার করুন
+</a>
+
+</div>
+</div>
+
+
+<!-- DIXON -->
+
+<div class="card plant grape">
+
+<img src="https://images.unsplash.com/photo-1537640538966-79f369143f8f?auto=format&fit=crop&w=800&q=80">
+
+<div class="card-body">
+
+<span class="tag">আঙ্গুরের চারা</span>
+
+<h3>🍇 ডিক্সন</h3>
+
+<div class="price">
+৩৫০৳
+</div>
+
+<p>
+ডিক্সন জাতের আঙ্গুরের চারা।
+</p>
+
+<a class="order-btn"
+target="_blank"
+href="https://wa.me/8801881484471?text=আসসালামু%20আলাইকুম,%20আমি%20ডিক্সন%20আঙ্গুরের%20চারা%20নিতে%20চাই।%20মূল্য%20৩৫০৳।%20বিস্তারিত%20জানতে%20চাই।">
+
+💬 WhatsApp-এ অর্ডার করুন
+</a>
+
+</div>
+</div>
+
+
+<!-- EKELO -->
+
+<div class="card plant grape">
+
+<img src="https://images.unsplash.com/photo-1537640538966-79f369143f8f?auto=format&fit=crop&w=800&q=80">
+
+<div class="card-body">
+
+<span class="tag">আঙ্গুরের চারা</span>
+
+<h3>🍇 একেলো</h3>
+
+<div class="price">
+২০০৳
+</div>
+
+<p>
+একেলো জাতের আঙ্গুরের চারা।
+</p>
+
+<a class="order-btn"
+target="_blank"
+href="https://wa.me/8801881484471?text=আসসালামু%20আলাইকুম,%20আমি%20একেলো%20আঙ্গুরের%20চারা%20নিতে%20চাই।%20মূল্য%20২০০৳।%20বিস্তারিত%20জানতে%20চাই।">
+
+💬 WhatsApp-এ অর্ডার করুন
+</a>
+
+</div>
+</div>
+
+
+<!-- THAI POMELO -->
+
+<div class="card plant other">
+
+<img src="https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80">
+
+<div class="card-body">
+
+<span class="tag">অন্যান্য ফলজ</span>
+
+<h3>🍊 থাই জাম্বুরা বারোমাসি</h3>
+
+<div class="price">
+৩৫০৳
+</div>
+
+<p>
+বারোমাসি থাই জাম্বুরার চারা।
+</p>
+
+<a class="order-btn"
+target="_blank"
+href="https://wa.me/8801881484471?text=আসসালামু%20আলাইকুম,%20আমি%20থাই%20জাম্বুরা%20বারোমাসি%20চারা%20নিতে%20চাই।%20মূল্য%20৩৫০৳।%20বিস্তারিত%20জানতে%20চাই।">
+
+💬 WhatsApp-এ অর্ডার করুন
+</a>
+
+</div>
+</div>
+
+
+<!-- THAI SAPOTA -->
+
+<div class="card plant other">
+
+<img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?auto=format&fit=crop&w=800&q=80">
+
+<div class="card-body">
+
+<span class="tag">অন্যান্য ফলজ</span>
+
+<h3>🍈 থাই সফেদা</h3>
+
+<div class="price">
+১০০৳
+</div>
+
+<p>
+থাই সফেদার মানসম্মত চারা।
+</p>
+
+<a class="order-btn"
+target="_blank"
+href="https://wa.me/8801881484471?text=আসসালামু%20আলাইকুম,%20আমি%20থাই%20সফেদার%20চারা%20নিতে%20চাই।%20মূল্য%20১০০৳।%20বিস্তারিত%20জানতে%20চাই।">
+
+💬 WhatsApp-এ অর্ডার করুন
+</a>
+
+</div>
+</div>
+
+
+<!-- OTHER -->
+
+<div class="card plant other">
+
+<img src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=800&q=80">
+
+<div class="card-body">
+
+<span class="tag">অন্যান্য চারা</span>
+
+<h3>🌱 অন্যান্য জাতের চারা</h3>
+
+<div class="price">
+দাম জানতে WhatsApp
+</div>
+
+<p>
+অন্যান্য চারা ও বর্তমান মূল্য জানতে সরাসরি WhatsApp-এ মেসেজ করুন।
+</p>
+
+<a class="order-btn"
+target="_blank"
+href="https://wa.me/8801881484471?text=আসসালামু%20আলাইকুম,%20আমি%20Fulbari%20Agro%20Farm%20%26%20Nursery%20থেকে%20অন্যান্য%20গাছের%20চারা%20সম্পর্কে%20জানতে%20চাই।">
+
+💬 WhatsApp-এ দাম জানতে চাই
+</a>
+
+</div>
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- AGRICULTURE ADVICE -->
+
+<section class="advice" id="advice">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>👨‍🌾 কৃষকের জন্য কৃষি পরামর্শ</h2>
+
+<p>
+সঠিক তথ্য ও আধুনিক পদ্ধতি ব্যবহার করুন, উৎপাদন বাড়ান
+</p>
+
+</div>
+
+
+<div class="advice-grid">
+
+<div class="advice-card">
+
+<h3>🌱 চারা রোপণের আগে</h3>
+
+<p>
+জমির মাটি পরীক্ষা করে উপযুক্ত জাত নির্বাচন করুন।
+রোপণের আগে জমি ও গর্ত ভালোভাবে প্রস্তুত করুন।
+</p>
+
+</div>
+
+
+<div class="advice-card">
+
+<h3>💧 সেচ ব্যবস্থাপনা</h3>
+
+<p>
+গাছের বয়স, মাটি ও আবহাওয়ার ওপর ভিত্তি করে সেচ দিন।
+অতিরিক্ত পানি জমতে দেবেন না।
+</p>
+
+</div>
+
+
+<div class="advice-card">
+
+<h3>🌾 সার ব্যবস্থাপনা</h3>
+
+<p>
+মাটি পরীক্ষা ও গাছের প্রয়োজন অনুযায়ী সার ব্যবহার করুন।
+সম্ভব হলে জৈব সার ব্যবহার করুন।
+</p>
+
+</div>
+
+
+<div class="advice-card">
+
+<h3>🐛 রোগ-পোকা দমন</h3>
+
+<p>
+নিয়মিত গাছ পর্যবেক্ষণ করুন। রোগ বা পোকা দেখা দিলে
+দ্রুত কৃষি বিশেষজ্ঞের পরামর্শ নিন।
+</p>
+
+</div>
+
+
+<div class="advice-card">
+
+<h3>✂️ গাছ ছাঁটাই</h3>
+
+<p>
+শুকনো ও রোগাক্রান্ত ডাল নিয়মিত ছাঁটাই করলে
+গাছের আলো-বাতাস চলাচল ভালো হয়।
+</p>
+
+</div>
+
+
+<div class="advice-card">
+
+<h3>🌦️ আবহাওয়া</h3>
+
+<p>
+অতিরিক্ত বৃষ্টি, গরম বা শীতের সময়ে গাছের প্রয়োজন অনুযায়ী
+সুরক্ষা ব্যবস্থা নিন।
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="container">
+
+<div class="about">
+
+<div>
+
+<img src="https://images.unsplash.com/photo-1492496913980-501348b61469?auto=format&fit=crop&w=1000&q=80">
+
+</div>
+
+
+<div>
+
+<h2>🌿 আমাদের সম্পর্কে</h2>
+
+<p>
+<strong>Fulbari Agro Farm & Nursery</strong> একটি কৃষিভিত্তিক উদ্যোগ।
+আমাদের লক্ষ্য হলো কৃষকদের কাছে মানসম্মত গাছের চারা পৌঁছে দেওয়া
+এবং আধুনিক কৃষি সম্পর্কে প্রয়োজনীয় তথ্য প্রদান করা।
+</p>
+
+<br>
+
+<p>
+<strong>
+“উন্নত চারা, সমৃদ্ধ কৃষি, সবুজ আগামী।”
+</strong>
+</p>
+
+<br>
+
+<p>
+কৃষকের সফলতাই আমাদের অনুপ্রেরণা।
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<div class="contact-box">
+
+<div>
+
+<h2>📞 যোগাযোগ করুন</h2>
+
+<p>
+গাছের চারা, মূল্য, কৃষি পরামর্শ অথবা অর্ডারের জন্য
+আমাদের সাথে যোগাযোগ করুন।
+</p>
+
+<br>
+
+<div class="contact-info">
+
+<p>📱 মোবাইল: <strong>01881484471</strong></p>
+
+<p>💬 WhatsApp: <strong>01881484471</strong></p>
+
+<p>📍 ঠিকানা: ফুলবাড়ী, ঘাটাইল, টাঙ্গাইল, বাংলাদেশ</p>
+
+</div>
+
+</div>
+
+
+<div class="contact-form">
+
+<h3 style="color:#075e2d;margin-bottom:15px;">
+চারা সম্পর্কে জানতে মেসেজ করুন
+</h3>
+
+<input
+type="text"
+id="name"
+placeholder="আপনার নাম">
+
+<input
+type="text"
+id="phone"
+placeholder="মোবাইল নম্বর">
+
+<textarea
+id="message"
+rows="4"
+placeholder="কোন চারা বা কৃষি বিষয়ে জানতে চান?"></textarea>
+
+<button onclick="sendMessage()">
+💬 WhatsApp-এ মেসেজ পাঠান
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+🌱 <strong>Fulbari Agro Farm & Nursery</strong>
+</p>
+
+<p>
+© 2026 Fulbari Agro Farm & Nursery
+</p>
+
+<p>
+উন্নত চারা, সমৃদ্ধ কৃষি, সবুজ আগামী 🌱
+</p>
+
+</footer>
+
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+class="whatsapp"
+href="https://wa.me/8801881484471?text=আসসালামু%20আলাইকুম,%20আমি%20Fulbari%20Agro%20Farm%20%26%20Nursery%20থেকে%20গাছের%20চারা%20সম্পর্কে%20জানতে%20চাই।"
+target="_blank"
+title="WhatsApp">
+
+💬
+
+</a>
+
+
+<script>
+
+/* =========================
+   PLANT FILTER
+========================= */
+
+function filterPlants(category,button){
+
+    const plants =
+    document.querySelectorAll(".plant");
+
+    const buttons =
+    document.querySelectorAll(".plant-buttons button");
+
+    buttons.forEach(btn=>{
+        btn.classList.remove("active");
+    });
+
+    button.classList.add("active");
+
+    plants.forEach(plant=>{
+
+        if(category === "all"){
+
+            plant.style.display = "block";
+
+        }
+
+        else if(plant.classList.contains(category)){
+
+            plant.style.display = "block";
+
+        }
+
+        else{
+
+            plant.style.display = "none";
+
+        }
+
+    });
+
+}
+
+
+/* =========================
+   CONTACT FORM → WHATSAPP
+========================= */
+
+function sendMessage(){
+
+    const name =
+    document.getElementById("name").value.trim();
+
+    const phone =
+    document.getElementById("phone").value.trim();
+
+    const message =
+    document.getElementById("message").value.trim();
+
+
+    if(name === "" || phone === "" || message === ""){
+
+        alert("দয়া করে সব তথ্য পূরণ করুন।");
+
+        return;
+
+    }
+
+
+    const text =
+    "আসসালামু আলাইকুম,%0A%0A" +
+    "নাম: " +
+    encodeURIComponent(name) +
+    "%0Aমোবাইল: " +
+    encodeURIComponent(phone) +
+    "%0A%0Aবার্তা:%0A" +
+    encodeURIComponent(message);
+
+
+    window.open(
+        "https://wa.me/8801881484471?text=" + text,
+        "_blank"
+    );
+
+}
+
+</script>
+
+</body>
+</html>
