@@ -1,1 +1,0 @@
-# FulbariAgroFarm-nursery
